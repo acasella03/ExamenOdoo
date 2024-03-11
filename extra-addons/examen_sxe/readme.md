@@ -4,7 +4,7 @@ Entramos en la terminal como root dentro del contenedor de Odoo, para poder crea
 ![image](Imagenes/1.png)
 
 Luego, creamos el archivo manifest.py con la información del módulo.
- [manifest.py](./models/_manifest_.py)
+ [manifest.py](__manifest__.py)
 
 ![image](Imagenes/2.png)
 
@@ -16,8 +16,8 @@ Creamos el archivo tabla.py con la clase que va a representar el modelo.
 from odoo import fields, models
 
 class TestModel(models.Model):
-    _name = "test_model"
-    _description = "test_model"
+    _name = "test_modelo"
+    _description = "test_modelo"
 
     id = fields.Integer(string="ID")
     producto = fields.Char(string="Producto")
@@ -25,4 +25,5 @@ class TestModel(models.Model):
 ```
 Y debemos importarlo en el archivo [init.py](__init__.py)
 
-
+## 3. Crear Datos de la tabla
+Creamos un directorio data y dentro el archivo [datos.xml](./data/datos.xml)
