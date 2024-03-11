@@ -22,3 +22,6 @@ class TestModel(models.Model):
     viabilidad = fields.Float(string="Viabilidad")
 ```
 Y debemos importarlo en el archivo [init.py](__init__.py)
+
+![image](Imagenes/2.png)
+
