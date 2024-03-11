@@ -6,6 +6,8 @@ Entramos en la terminal como root dentro del contenedor de Odoo, para poder crea
 Luego, creamos el archivo manifest.py con la información del módulo.
  [manifest.py](./models/_manifest_.py)
 
+![image](Imagenes/2.png)
+
 ## 2. Crear un modelo en Odoo
 Creamos el archivo tabla.py con la clase que va a representar el modelo.
 ```
@@ -23,5 +25,4 @@ class TestModel(models.Model):
 ```
 Y debemos importarlo en el archivo [init.py](__init__.py)
 
-![image](Imagenes/2.png)
 
